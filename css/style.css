@@ -11,24 +11,79 @@ nav .brand-logo {
   color: #444;
 }
 
-.section1{
+.section1{ /*Bloco azul*/
   padding: 2%;
-}
-
-.containerForms{
-  height: 100px;
-  margin: auto;
-}
-
-.forms{
+  height: 400px;
   display: flex;
+  margin: auto;
   justify-content: center;
   align-items: center;
-  height: 100%;
-  width: 100%;
+}
+
+#containerForms{ 
+  width: 50%;
+}
+
+#box_shadow{
+  box-shadow: 0px -1px 20px 0px rgba(0, 0, 0, 0.534);
 
 }
 
-div.input-field{
-  margin: auto;
+.row .col.s6 {
+  width: 100%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
+#destino{
+  width: 100%;
+}
+
+#search_button{
+  margin: 2% auto 0 0;
+}
+
+#form{
+  margin: 10px auto;
+  padding: 10px 10%;
+}
+
+hr#linha{
+  margin: 4% auto;
+
+}
+
+#títulosec2{
+  font-size: 20px;
+  position:absolute;
+  top: 66%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 5px 15px;
+
+}
+
+#container_cards{
+  display: grid;
+  grid-template-columns: 35% 35% 35%;
+  grid-gap: 10%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 600px){
+  #container_cards{
+    grid-template-columns: 35% 35%;
+  }
+
+  #títulosec2{
+    top: 62%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  #container_cards{
+    grid-template-columns: 40%;
+  }
 }

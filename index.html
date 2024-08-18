@@ -11,13 +11,13 @@
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="light-blue lighten-3" role="navigation">
+  <nav class="light-blue darken-4 white-text" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <a id="logo-container" href="#" class="brand-logo white-text">Logo</a>
       <ul class="right hide-on-med-and-down">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
+        <li class="active"><a class="white-text" href="#">Home</a></li>
+        <li><a class="white-text" href="#">Sobre</a></li>
+        <li><a class="white-text" href="#">Contato</a></li>
       </ul>
 
       <!-- Menu Mobile -->
@@ -30,19 +30,77 @@
     </div>
   </nav>
 
-  <div class="section light-blue lighten-1 section1">
-    <div class="containerForms">
-      <div class="row white">
-        <form class="col s12">
+  <!-- Section 1 -->
+  <div class="section light-blue darken-2 section1">
+    <div id="containerForms">
+      <div class="row white" id="box_shadow">
+        <form class="col s12" id="form">
           <div class="row">
-            <div class="input-field col s6">
+            <div class="input-field col s10">
               <input id="destino" type="text" class="validate">
               <label for="destino">Destino</label>
+              <a id="search_button"class="waves-effect waves-light btn-small"><i class="material-icons left">flight</i>Buscar</a>
             </div>
           </div>
       </div>
     </div>
+  </div><!-- Section 1 -->
+  
+  <p class="flow-text" id="títulosec2">Cards</p> <hr class="container" id="linha">
+  <!-- Section 2 -->
+  <div class="section white section2">
+    <div class="container" id="container_cards">
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="/imagens/background1.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Rio de Janeiro, RJ<i class="material-icons right">add</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Rio de Janeiro, RJ<i class="material-icons right">close</i></span>
+          <p>Preço: R$ 1.200,00<br>
+          Data: 01/09 - Domingo<br>
+          Cidade: Rio de Janeiro<br>
+          Estado: RJ</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="/imagens/background2.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Florianópolis, SC<i class="material-icons right">add</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Florianópolis, SC<i class="material-icons right">close</i></span>
+          <p>Preço: R$ 1.500,00<br>
+          Data: 15/10 - Quarta<br>
+          Cidade: Florianópolis<br>
+          Estado: SC</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="/imagens/background3.jpg">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Salvador, BA<i class="material-icons right">add</i></span>
+          <p><a href="#">This is a link</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Salvador, BA<i class="material-icons right">close</i></span>
+          <p>Preço: R$ 1.350,00<br>
+          Data: 21/11 - Sexta<br>
+          Cidade: Salvador<br>
+          Estado: BA</p>
+        </div>
+      </div>
+    </div>
   </div>
+
 
   <!--  Scripts-->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
