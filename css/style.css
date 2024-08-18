@@ -6,6 +6,7 @@
  * Made By MaterializeCSS.com
  */
 
+
 nav ul a,
 nav .brand-logo {
   color: #444;
@@ -84,6 +85,46 @@ hr#linha{
 
 @media screen and (max-width: 400px){
   #container_cards{
+    grid-template-columns: 35%;
+  }
+}
+
+#títulosec3{
+  font-size: 20px;
+  position:absolute;
+  top: 129.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 5px 15px;
+}
+
+@media screen and (max-width: 600px){
+  #container_cards{
+    grid-template-columns: 35% 35%;
+    margin: 50px
+  }
+
+  #títulosec3{
+    top: 153%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  #container_cards{
     grid-template-columns: 40%;
   }
+
+  #títulosec3{
+    top: 136%;
+  }
+}
+
+img[alt="logo_github"]{
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+img[alt="logo_github"]:hover{
+  transform: scale(1.2);
 }
